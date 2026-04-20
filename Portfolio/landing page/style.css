@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #141414;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(0,0,0,0.9);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.profile {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* ******************hero Section********************* */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to top, #141414 10%, transparent 60%),
+              linear-gradient(to right, #000 20%, transparent 60%),
+              url('https://images.unsplash.com/photo-1608889175119-3c2cfd1e7c43') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.play-btn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.play-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.info-btn {
+  background-color: rgba(109,109,110,0.7);
+  color: white;
+}
+
+.info-btn:hover {
+  background-color: rgba(109,109,110,0.4);
+}
+
+/* ******************Header Section********************* */
+.movie-row {
+  padding: 20px 40px;
+  color: white;
+}
+
+.movie-row h2 {
+  margin-bottom: 10px;
+}
+
+.row-container {
+  position: relative;
+}
+
+.movie-list {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+}
+
+.movie-list::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  width: 200px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}

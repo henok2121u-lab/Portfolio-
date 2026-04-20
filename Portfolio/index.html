@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script></head>
+<body>
+
+<!-- ////////////////   navbar  //////////////////////////////////////////////////////////////////// -->
+    <header class="header">
+        <div class="logo">HENOK BIRHANU</div>
+        <nav >
+           <ul class="navbar">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+<!-- ////////////////   home  //////////////////////////////////////////////////////////////////// -->
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="img" src="images/profile.png" alt="John Doe profile picture">
+      </div>
+
+      <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">HENOK BIRHANU</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/HenokBirhanu.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" id="contact">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/henok-birhanu-93053b402/" target="_blank">
+                    <img src="images/linkedin-brands-solid-full.svg"
+                        alt="My linjedin profile" 
+                        class="icon">
+                </a>
+                <a href="https://github.com/henok2121u-lab" target="_blank">
+                    <img src="images/github-brands-solid-full.svg" 
+                        alt="My Github profile" 
+                        class="icon">
+                </a>
+            </div>
+      </div>
+    </section>
+
+    <!-- ////////////////// SKILLS ////////////////// -->
+<section id="skills" class="skills">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <img src="images/html.png" alt="HTML">
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/text.png" alt="CSS">
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/js.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="images/social.png" alt="Git">
+            <h3>Git</h3>
+        </div>
+
+    </div>
+
+</section>
+    
+
+   <section class="projects" id="projects">
+
+    <h2 class="section-title">Recent Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="images/store.png" alt="Project Image">
+            </div>
+
+            <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p>A modern personal portfolio built using HTML, CSS, and JavaScript.</p>
+
+                <div class="btn-group">
+                    <a href="PROJECT 4/index.html" class="btn btn-outline">Live Demo</a>
+                    <a href="#" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="images/earth.png" alt="">
+            </div>
+
+            <div class="project-content">
+                <h3>Landing Page</h3>
+                <p>Responsive landing page with smooth animations and clean UI.</p>
+
+                <div class="btn-group">
+                    <a href="PROJECT 2/index.html" class="btn btn-outline">Live Demo</a>
+                    <a href="#" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="images/camp.png" alt="">
+            </div>
+
+            <div class="project-content">
+                <h3>Todo App</h3>
+                <p>JavaScript app with local storage and dynamic UI updates.</p>
+
+                <div class="btn-group">
+                    <a href="PROJECT 1/index.html" class="btn btn-outline">Live Demo</a>
+                    <a href="#" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ////////////////// CONTACT ////////////////// -->
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+
+            <a href="mailto:your@email.com" class="contact-card">
+                <img src="images/at-solid-full.svg" alt="">
+                <span>Email</span>
+            </a>
+
+            <a href="https://github.com/henok2121u-lab" target="_blank" class="contact-card">
+                <img src="images/github-brands-solid-full.svg" alt="">
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/henok-birhanu-93053b402/" target="_blank" class="contact-card">
+                <img src="images/linkedin-brands-solid-full.svg" alt="">
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="https://t.me/yourusername" target="_blank" class="contact-card">
+                <img src="images/telegram-brands-solid-full.svg" alt="">
+                <span>Telegram</span>
+            </a>
+
+        </div>
+
+        <!-- Optional Contact Form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn btn-demo">Send Message</button>
+        </form>
+
+    </div>
+
+</section>
+</body>
+</html>

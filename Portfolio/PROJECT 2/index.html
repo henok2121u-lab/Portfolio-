@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <section class="header">
+        <div class="contaner">
+            <nav>
+                <div class="logo"><h1>EARTH</h1></div>
+                <ul class="nav-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#home">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-btn"><img src="img/menu.svg" alt=""></div>
+            </nav>
+
+            <div class="header-content">
+                <h1>EARTH</h1>
+                <p> ENDLESS POTENCIAL</p>
+                <button class = "primery-button"> EXPLORE</button>
+            </div>
+        </div>
+    </section>
+
+<!-- -----------------------------/////////////// SERVICES //////////////////----------------------->
+    <!--   SERVICES-->
+
+    <section id = "services" class="contaner">
+        <div class="services">
+            <img src="img/service-1.png" alt="">
+            <h1>web Design</h1>
+            <p>
+                Custom web design for small business, we help you capture
+                new audience and increas your selse.
+            </p>
+        </div>
+
+        <div class="services">
+            <img src="img/service-2.png" alt="">
+            <h1>Grafics Design</h1>
+            <p>
+                Custom web design for small business, we help you capture
+                new audience and increas your selse.
+            </p>
+        </div>
+
+        <div class="services">
+            <img src="img/service-3.png" alt="">
+            <h1>Contant criation</h1>
+            <p>
+                Custom web design for small business, we help you capture
+                new audience and increas your selse.
+            </p>
+        </div>
+    </section>
+
+
+<!-- -----------------------------/////////////// ABOUT //////////////////----------------------->
+    <!--   ABOUT-->
+    <div id="about" class="contaner">
+        <div class="about-contant">
+            <h1>About us</h1>
+            <p>
+                I made it so it is super easy to upsate and so that it flows perfectly with my tutorials. Lots of love and 
+                hundreds of hours want in to making it . i hope You love ot as much as i do. I wish you the best of luck with 
+                your business , enjoy the adventure.
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="img/about.png" alt="">
+        </div>
+    </div>
+
+<!-- -----------------------------/////////////// Talk to us //////////////////----------------------->
+    <!--   Talk to us -->
+    <section id="talk-to-us">
+        <div class="talk-to-us-contante">
+            <h1>TALK TO US</h1>
+            <p>
+                Have any question? we are always open to talk about your business,
+                new project, creative oportunities and how we can help you.
+            </p>
+            <div class="primery-button">GET IN TOUCH</div>
+        </div>
+    </section>
+
+<!-- -----------------------------/////////////// footer //////////////////----------------------->
+    <!--   footer -->
+
+    <footer class="contaner">
+        <ul class="footer-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Servicse</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h1 class="logo">EARTH</h1>
+        <P>C2022 Earth. All right reserved.</P>
+    </footer>
+
+
+
+<!-- -----------------------------/////////////// JAVA SCRIPT //////////////////----------------------->
+    <!--   JAVA SCRIPT-->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click' , function(){
+            navLinks.classList.toggle('active')
+        })
+        navLinks
+
+    </script>
+
+</body>
+</html>

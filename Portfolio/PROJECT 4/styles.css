@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600");
+
+/* Remove Default Margin and paddings for all HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS variables to use any where in website (if you want to change theme one change here will apply to entire website) */
+:root {
+    --heading : #393A56;
+    --text : #7E7F85;
+    --theme : #FD5353;
+    --bg : #F7F8F9;
+    --footerBg : #415161;
+}
+
+body {
+    font-family: poppins;
+}
+h1,h2,h3,h4,h5 {
+    color: var(--heading);
+}
+p {
+    color: var(--text);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.contaner {
+    width: 80%;
+    margin: auto;
+}
+/* -- ==== Header Section === -- */
+ .header {
+    background-color: var(--bg);
+    width: 100%;
+    height: 90vh;
+ }
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navlinkes {
+    display: flex;
+    align-items: center;
+}
+.navlinkes li {
+    margin: 0 20px;
+}
+.navlinkes img {
+    width: 50px;
+}
+.navlinkes a {
+    color: var(--heading);
+}
+.header_content {
+    display: flex;
+    align-items: center;
+}
+.header_content img {
+    max-width: 90%;
+}
+.header_info {
+    flex: 60%;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: var(--theme);
+    border-radius: 5px;
+}
+.header_info h1 {
+    font-size: 50px;
+}
+.header_info h3 , .header_info p {
+    margin: 15px 0;
+}
+.ctn {
+    padding: 10px 16px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--theme);
+    border-radius: 10px;
+    border: none;
+
+}
+
+/* -- ////////////////////////==== Catagory Section ===////////////////////////// -- */
+
+#catagory {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+.catagory {
+    text-align: center;
+}
+
+/* -- ////////////////////////==== Feaatured Section ===////////////////////////// -- */
+#featured_products {
+    margin: 80px auto;
+}
+.section_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+}
+.products {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* -- ////////////////////////==== offer Section ===////////////////////////// -- */
+
+#offer {
+    background-color: var(--bg);
+}
+#offer .contaner {
+    display: flex;
+    align-items: center;
+}
+#offer img {
+    max-width: 600px;
+}
+.offer-content h1 {
+    font-size: 50px;
+}
+
+
+/* -- ////////////////////////==== featured company Section ===////////////////////////// -- */
+#featured_campany {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px auto;
+}
+
+
+/* -- ////////////////////////==== footer Section ===////////////////////////// -- */
+
+footer {
+    background-color: var(--footerBg);
+}
+footer p, footer li {
+    color: rgb(197, 195, 195);
+}
+footer h3 {
+    color: whitesmoke;
+}
+.footer_content {
+    display: flex;
+    
+    padding: 80px 0;
+    align-items: center;
+}
+.footer_content .col {
+    flex: 1;
+    margin: 0 20px;
+}
+.copyright {
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* -- ////////////////////////==== for mobile devices ===////////////////////////// -- */
+
+@media only screen and (max-width:750px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navlinkes {
+        flex-direction: column;
+    }
+}
