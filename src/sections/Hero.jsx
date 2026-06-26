@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '../public/your-photo.png';
+
 
 export default function Hero() {
   return (
@@ -39,7 +39,7 @@ export default function Hero() {
             <div className="absolute inset-3 rounded-xl border border-ethiopian-gold/30 pointer-events-none"></div>
             <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-xl bg-ethiopian-bg-inner overflow-hidden flex items-center justify-center">
               <img 
-                src={profilePhoto} 
+                src="/your-photo.png" 
                 alt="Henok Birhanu" 
                 className="w-full h-full object-cover mix-blend-luminosity brightness-95 opacity-90 hover:mix-blend-normal hover:opacity-100 transition-all duration-300"
                 onError={(e) => { e.currentTarget.style.display = 'none'; }}
