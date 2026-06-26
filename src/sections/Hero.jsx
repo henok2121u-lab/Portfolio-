@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '../assets/your-photo.png';
+import profilePhoto from '../public/your-photo.png';
 
 export default function Hero() {
   return (
